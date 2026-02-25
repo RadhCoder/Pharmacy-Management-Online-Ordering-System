@@ -1,0 +1,123 @@
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    color: #334155;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+}
+
+.confirmation-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0fdf4;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.confirmation-message p {
+    color: #166534;
+    margin: 0;
+}
+
+.table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #475569;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr:last-child {
+    font-weight: 600;
+    background-color: #f8fafc;
+}
+
+.navigation-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.button {
+    padding: 0.875rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.continue-shopping {
+    background-color: #2563eb;
+    color: white;
+}
+
+.continue-shopping:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.go-home {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.go-home:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .navigation-btns {
+        flex-direction: column;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}

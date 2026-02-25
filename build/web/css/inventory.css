@@ -1,0 +1,321 @@
+/* Main Container Styles */
+body {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Page Title */
+.text-center.mb-4 {
+    color: #1f6fb0;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem !important;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.text-center.mb-4::before {
+    content: '💊';
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.text-center.mb-4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #1e88e5, #4caf50);
+    border-radius: 2px;
+}
+
+/* Filter Section */
+.filter-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2rem;
+    border: 1px solid #e3f2fd;
+}
+
+/* Category Filter */
+#categoryFilter {
+    height: 3.5rem;
+    border: 2px solid #e3f2fd;
+    border-radius: 10px;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#categoryFilter:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.25);
+}
+
+#stockFilter {
+    height: 3.5rem;
+    border: 2px solid #e3f2fd;
+    border-radius: 10px;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#stockFilter:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.25);
+}
+
+/* Search Bar */
+#search {
+    height: 3.5rem;
+    border: 2px solid #e3f2fd;
+    border-radius: 10px;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#search:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.25);
+}
+
+/* Inventory Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+    height: 100%;
+    background: white;
+    border: 1px solid #e3f2fd;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e3f2fd;
+}
+
+.card-body {
+    padding: 1.75rem;
+}
+
+.card-title {
+    color: #1e88e5;
+    font-weight: 600;
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+}
+
+.card-text {
+    color: #546e7a;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-text strong {
+    color: #2c3e50;
+    display: inline-block;
+    width: 90px;
+    font-weight: 500;
+}
+
+/* Add to Cart Button */
+.btn-primary {
+    background: #2c7da0;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.description {
+    font-style: italic;
+    color: #555;
+    background: #f8f9fa;
+    padding: 8px;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+
+.btn-primary:hover {
+    background: #61a5c2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Stock Status Indicators */
+.high-stock {
+    color: #43a047;
+    font-weight: 500;
+}
+
+.medium-stock {
+    color: #ffa000;
+    font-weight: 500;
+}
+
+.low-stock {
+    color: #e53935;
+    font-weight: 500;
+}
+
+/* Expiration Date Warning */
+.expiring-soon {
+    color: #e53935;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(229, 57, 53, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.expired {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Error Messages */
+.text-danger {
+    background-color: #ffebee;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border-left: 4px solid #e53935;
+    font-weight: 500;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 3rem;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid #e3f2fd;
+    border-top: 3px solid #1e88e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    #categoryFilter, #search {
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .text-center.mb-4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-top: 1rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .text-center.mb-4 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Additional Pharmacy-Specific Styles */
+.prescription-required {
+    background-color: #fff3e0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #f57c00;
+    display: inline-block;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #4caf50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+.category-tag {
+    background-color: #e3f2fd;
+    color: #1e88e5;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: inline-block;
+}

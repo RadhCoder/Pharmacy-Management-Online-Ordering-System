@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Jan 2025, 9:45:28 pm
+    Author     : Ratna Dewi
+*/
+/* styles/login.css */
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+.alert-danger {
+    background-color: #fff3f3;
+    border-color: #dc3545;
+    color: #dc3545;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+.remember-me {
+    margin: 15px 0;
+}
+
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.forgot-password:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
